@@ -1,12 +1,10 @@
 <img src="https://github.com/DiegoJCordeiro/DiegoJCordeiro/blob/main/assets/kotlin-logo.jpg" width=250>
 
-# Estudo de Go Com Apache Kafka
+# Estudo de Kotlin
 
 </br>
 
 <hr>
-
-
 
 #### ***Desenvolvido em***
 
