@@ -1,0 +1,51 @@
+### POST - Create new Establishment.
+POST http://localhost:8080/v1/establishment HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_establishment",
+  "name": "establishment_name",
+  "description": "establishment_description",
+  "status": "ENABLE",
+  "addresses": [
+    "id_test_addresses"
+  ],
+  "professionals": [
+    "id_test_professionals"
+  ],
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": null
+}
+
+### PUT - Update new Establishment.
+PUT http://localhost:8080/v1/establishment HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_establishment",
+  "name": "establishment_name",
+  "description": "establishment_description",
+  "status": "ENABLE",
+  "addresses": [
+    "id_test_addresses"
+  ],
+  "professionals": [
+    "id_test_professionals"
+  ],
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": "2025-07-29T00:00:00"
+}
+
+
+### GET - query one Establishment.
+GET http://localhost:8080/v1/establishment/id_test_establishment
+Content-Type: application/json
+
+### GET - query a lot of Establishment.
+GET http://localhost:8080/v1/establishment
+Content-Type: application/json
+
+### DELETE - query a lot of Establishment.
+DELETE http://localhost:8080/v1/establishment/id_test_establishment
+Content-Type: application/json
+

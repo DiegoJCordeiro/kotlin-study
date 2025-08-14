@@ -1,0 +1,50 @@
+### POST - Create new Address.
+POST http://localhost:8080/v1/address HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_address",
+  "country": "Brazil",
+  "street": "Milton Patricio de Oliveira",
+  "city": "Diadema",
+  "zipcode": "09980490",
+  "number": "74",
+  "type": "MAIN",
+  "phones": [
+    "id_test_phone"
+  ],
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": null
+}
+
+### PUT - Update new Address.
+PUT http://localhost:8080/v1/address HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_address",
+  "country": "Brazil",
+  "street": "Milton Patricio de Oliveira",
+  "city": "Diadema",
+  "zipcode": "09980490",
+  "number": "74",
+  "type": "MAIN",
+  "phones": [
+    "id_test_phone"
+  ],
+  "createdAt": "2025-07-22T00:00:00",
+  "updatedAt": "2025-07-23T00:00:00"
+}
+
+### GET - query one Address
+GET http://localhost:8080/v1/address/id_test_address
+Content-Type: application/json
+
+### GET - query a lot of Address
+GET http://localhost:8080/v1/address
+Content-Type: application/json
+
+### DELETE - query a lot of Address
+DELETE http://localhost:8080/v1/address/id_test_address
+Content-Type: application/json
+

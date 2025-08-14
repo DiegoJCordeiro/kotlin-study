@@ -1,0 +1,41 @@
+### POST - Create new Plan.
+POST http://localhost:8080/v1/plan HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_plan",
+  "title": "plan_title",
+  "description": "plan_description",
+  "price": "1.000",
+  "status": "ENABLE",
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": null
+}
+
+### PUT - Update new Plan.
+PUT http://localhost:8080/v1/plan HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_plan",
+  "title": "plan_title",
+  "description": "plan_description",
+  "price": "1.000",
+  "status": "ENABLE",
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": "2025-08-01T22:30:00"
+}
+
+
+### GET - query one Plan.
+GET http://localhost:8080/v1/plan/id_test_plan
+Content-Type: application/json
+
+### GET - query a lot of Plan.
+GET http://localhost:8080/v1/plan
+Content-Type: application/json
+
+### DELETE - query a lot of Plan.
+DELETE http://localhost:8080/v1/plan/id_test_plan
+Content-Type: application/json
+

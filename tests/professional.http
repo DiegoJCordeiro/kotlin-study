@@ -1,0 +1,51 @@
+### POST - Create new Professional.
+POST http://localhost:8080/v1/professional HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_professional",
+  "fullName": "professional_fullName",
+  "description": "professional_description",
+  "status": "ENABLE",
+  "addresses": [
+    "id_test_addresses"
+  ],
+  "establishments": [
+    "id_test_establishments"
+  ],
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": null
+}
+
+### PUT - Update new Professional.
+PUT http://localhost:8080/v1/professional HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_professional",
+  "fullName": "professional_fullName",
+  "description": "professional_description",
+  "status": "ENABLE",
+  "addresses": [
+    "id_test_addresses"
+  ],
+  "establishments": [
+    "id_test_establishments"
+  ],
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": "2025-08-01T22:30:00"
+}
+
+
+### GET - query one Professional.
+GET http://localhost:8080/v1/professional/id_test_professional
+Content-Type: application/json
+
+### GET - query a lot of Professional.
+GET http://localhost:8080/v1/professional
+Content-Type: application/json
+
+### DELETE - query a lot of Professional.
+DELETE http://localhost:8080/v1/professional/id_test_professional
+Content-Type: application/json
+

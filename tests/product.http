@@ -1,0 +1,47 @@
+### POST - Create new Product.
+POST http://localhost:8080/v1/product HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_product",
+  "name": "product_title",
+  "description": "product_description",
+  "price": "1.000",
+  "remainingTime": 60,
+  "blockedTime": true,
+  "productType": "SERVICE",
+  "status": "ENABLE",
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": null
+}
+
+### PUT - Update new Product.
+PUT http://localhost:8080/v1/product HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_product",
+  "name": "product_title",
+  "description": "product_description",
+  "price": "1.000",
+  "remainingTime": 60,
+  "blockedTime": true,
+  "productType": "SERVICE",
+  "status": "ENABLE",
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": "2025-08-01T22:30:00"
+}
+
+
+### GET - query one Product.
+GET http://localhost:8080/v1/product/id_test_product
+Content-Type: application/json
+
+### GET - query a lot of Product.
+GET http://localhost:8080/v1/product
+Content-Type: application/json
+
+### DELETE - query a lot of Product.
+DELETE http://localhost:8080/v1/product/id_test_product
+Content-Type: application/json
+

@@ -1,0 +1,42 @@
+### POST - Create new Schedule.
+POST http://localhost:8080/v1/schedule HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_schedule",
+  "client": "id_test_client",
+  "professional": "id_test_professional",
+  "establishment": "id_test_establishment",
+  "products": [],
+  "dateTimeSchedule": "2025-08-02T18:02:00",
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": null
+}
+
+### PUT - Update new Schedule.
+PUT http://localhost:8080/v1/schedule HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "id_test_schedule",
+  "client": "id_test_client",
+  "professional": "id_test_professional",
+  "establishment": "id_test_establishment",
+  "products": [],
+  "dateTimeSchedule": "2025-08-02T18:02:00",
+  "createdAt": "2025-07-22T18:02:00",
+  "updatedAt": "2025-08-08T18:02:00"
+}
+
+### GET - query one Schedule.
+GET http://localhost:8080/v1/schedule/id_test_schedule
+Content-Type: application/json
+
+### GET - query a lot of Schedule.
+GET http://localhost:8080/v1/schedule
+Content-Type: application/json
+
+### DELETE - query a lot of Schedule.
+DELETE http://localhost:8080/v1/schedule/id_test_schedule
+Content-Type: application/json
+
